@@ -43,6 +43,10 @@ v4AP+ryAC64pgAjn4kAAEVEALT9+wCI/v8AL8GvAI3+/wAAAQEAAQEBAEjw+wCS/v8AAwEBAJf+/wA73
           </li>
 
           <li>
+            <a href="#/exiftool">Exif Data</a>
+          </li>
+          
+          <li>
             <a href="#/links">Links</a>
           </li>
         </ol>
@@ -119,7 +123,7 @@ v4AP+ryAC64pgAjn4kAAEVEALT9+wCI/v8AL8GvAI3+/wAAAQEAAQEBAEjw+wCS/v8AAwEBAJf+/wA73
           <h2>LAB</h2><img src="images/lab/stretched.jpg">
         </section>
         <section>
-          <h2>LAB</h2><img src="images/lab/analysis.png">
+          <h2>LAB</h2><img width="600" src="images/lab/analysis.png">
         </section>
       </section>
 
@@ -134,6 +138,26 @@ v4AP+ryAC64pgAjn4kAAEVEALT9+wCI/v8AL8GvAI3+/wAAAQEAAQEBAEjw+wCS/v8AAwEBAJf+/wA73
 
         <section>
           <h2>Up Down Curve</h2><img src="images/updown/analysis.jpg">
+        </section>
+      </section>
+
+      <section id="exiftool">
+        <section>
+          <h2>Exif Data</h2><img width="600" src="images/exif/nokia_1020.jpg">
+          <div><a href="dump.html">Makernotes</a></div>
+        </section>
+        <section>
+          <h2>Exif Data</h2>
+            <ul>
+            <li>
+                Read: exiftool nokia_1020.jpg
+            </li>
+            <li>
+                Delete:<br>
+                &nbsp;mogrify -strip nokia_1020.jpg<br>
+                &nbsp;jhead -purejpg nokia_1020.jpg
+            </li>
+            </ul>
         </section>
       </section>
 
