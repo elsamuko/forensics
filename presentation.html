@@ -3,9 +3,11 @@
 <html lang="en">
 <head>
   <meta name="generator" content=
-  "HTML Tidy for HTML5 (experimental) for Mac OS X https://github.com/w3c/tidy-html5/tree/c63cc39">
+  "HTML Tidy for HTML5 (experimental) for Linux https://github.com/w3c/tidy-html5/tree/c63cc39">
   <meta charset="utf-8">
-
+  <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAACAAAAKKeRACmnkQAABAMAAH1vAHj1+QBEkY4ALLGdAGzBuQA7yL0AOur1AFfY0QBY+f0AI6CGAEDt9QBB8fgAKKOPADS9rwBI8fgAlP3/AAUAAQBBjoYAlv3/ACesmACY/f8AJ7CbAH339wAtsJsAK9PNAAEREACm/PwAPce7AAAYEwAstqQASuDhACy6pwBa/P4Ahvz9ALT5/ACI/P0AM7enADTY0wBH6u0AK6KNAC6nkwDG/PwActvSALbm6ABQ9PkALKyZACeznACe//0AK7CcAAkwLgArtJ8AL9DOAD7p6wA76/EAL7efAH///gBV//8ASMW2AAAfIABf/P8AUMa5AETRyABk//8AM+DjAAADAwCT//4Aaf//ACqnlACX/P4Al//+AAAICQCZ//4Acf//ACyvmgAhln0ALq+aAHj//wB5//8AJZeAAGzGuQB8//8Agf//AK3//gBe+P0Ahf//ADTb3gBBtKAAj///AJD//wAFIyQAAAIBACykjACR//8Akv//ADXf4QCT//8AAAcHACyomACb/vwAmv//AJv//wB2+voALauYAJz//wAqr5sAnf//AJ///wAvrpgAUPr7ACqzngAKLTAAo///ACW5pwCl//8Ap///AL3s6gAlmoEAq/78AFj7/gCr//8AJ5uEABQwMABC6/MAML2qAEfv9gBt9vgALKWQAGW6sgCW/v0AL8a8AAAHCAAqrJMAWsvBAC7MxQAwzb8AAA4LACSIggApspwAI5R5AFP3/AAvr5wAZOvzAEXm7gCy/v0ALL+xACejiwAlposAKKSOAEPz+gC6/v0AK6OLAAABAAC++/0AYZGTAAYBAAAsppQAmv7+AAANCQCc/v4AZZmZAFX2+gCo/
+v4AP+ryAC64pgAjn4kAAEVEALT9+wCI/v8AL8GvAI3+/wAAAQEAAQEBAEjw+wCS/v8AAwEBAJf+/wA73+QAKq+VAKH+/wAtr54ALLKeAKT+/wApt6QAqf7/AGDy+AAx1dAAg/39ACKhhwCu/v8AZ/PyACidhAAooooAQvL5AAABAgA63d8Acvj4AG39/gBI9vwAMsa2AJn9/QArqZYAnf39AFb2/ABU+fwAMLaiAF78/ABD8fcAJ6GRACakkQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAR6iVl9OfgixlEHxSTo7CeLfUzGpPMZBPAiuaX8MNv5YXbE000AcbWm8CAYe1OnE2jTK4pz1TiBVAKCEZf5SFiSO6rBGDoV7FAyAILh8pWUN0yglBC3eyFBQUrosipgoPigSMBqk+ZK6esi8FMH6wgBy9N8a0kpFKFLKZJ1hVUFQ4cHoMj868Jl4AfZN2y6vHYjwqpELBXLmdr5stVnvNSTmYDtI/WBpppUSycsC7dXVXEsTJRmNFvm5drzV5dm1oRUwkz9ElaBZznB2jdW5IZ0mByFFYSW5uoh6GqrZubRZnWDuxbaCgS4RoZm1uM21gaLFga2gYExNgYa1bs2hmSQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  rel="icon" type="image/x-icon">
   <title>Forensics</title>
   <link rel="stylesheet" href="reveal/css/reveal.min.css">
   <link rel="stylesheet" href="reveal/css/theme/default.css" id="theme">
@@ -22,10 +24,7 @@
     <!-- Wrap all slides in a single "slides" class -->
 
     <div class="slides">
-      <!-- ALL SLIDES GO HERE -->
-      <!-- Each section element contains an individual slide -->
-
-      <section>
+      <section id="toc">
         <ol>
           <li>
             <a href="#/clone_detection">Clone Detection</a>
@@ -65,11 +64,23 @@
         <section>
           <h2>HSV</h2>
 
-          <table border="0">
+          <table>
             <tr>
-              <td><img src="images/hsv/sample_before.jpg"></td>
+              <td style="vertical-align: middle;"><img width="400" src="images/hsv/sample_before.jpg"></td>
 
-              <td><img src="images/hsv/histo_before.png"></td>
+              <td style="vertical-align: middle;"><img width="400" src="images/hsv/histo_before.png"></td>
+            </tr>
+          </table>
+        </section>
+
+        <section>
+          <h2>HSV</h2>
+
+          <table>
+            <tr>
+              <td style="vertical-align: middle;"><img width="400" src="images/hsv/sample_after.jpg"></td>
+
+              <td style="vertical-align: middle;"><img width="400" src="images/hsv/histo_after.png"></td>
             </tr>
           </table>
         </section>
@@ -80,31 +91,23 @@
       </section>
 
       <section id="updown">
-        <h2>Up Down Curve</h2>
+        <section>
+          <h2>Up Down Curve</h2><img src="images/updown/before.jpg">
+        </section>
+
+        <section>
+          <h2>Up Down Curve</h2><img src="images/updown/after.jpg">
+        </section>
+
+        <section>
+          <h2>Up Down Curve</h2><img src="images/updown/analysis.jpg">
+        </section>
       </section>
 
       <section id="links">
         <h2>Links</h2><a href=
         "http://www.rhetorik.ch/Bildmanipulation/Bildmanipulation.html">http://www.rhetorik.ch/Bildmanipulation/Bildmanipulation.html</a>
       </section>
-
-      <section data-markdown="">
-        <script type="text/template">
-		## Markdown support
-
-        For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-        ```
-        <section data-markdown>
-        ## Markdown support
-
-        For those of you who like that sort of thing.
-        Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-        </section>
-        ```
-        </script>
-      </section>
-      
     </div>
   </div><script src="reveal/lib/js/head.min.js">
 </script> <script src="reveal/js/reveal.min.js">
